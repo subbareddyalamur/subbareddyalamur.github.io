@@ -7,24 +7,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --background-color: #ffffff;
-            --text-color: #333;
+            --primary-color: #2a2f35;
+            --secondary-color: #4fc3f7;
+            --accent-color: #81c784;
+            --background-color: #1a1e23;
+            --text-color: #e0e0e0;
+            --card-bg: #252a30;
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', 'Roboto', sans-serif;
         }
 
         body {
             background-color: var(--background-color);
             color: var(--text-color);
-            line-height: 1.6;
+            line-height: 1.7;
             padding: 2rem;
+            font-size: 16px;
         }
 
         .container {
@@ -34,72 +37,125 @@
 
         header {
             text-align: center;
-            padding: 2rem 0;
-            border-bottom: 3px solid var(--secondary-color);
+            padding: 3rem 0;
             margin-bottom: 2rem;
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--secondary-color), transparent);
         }
 
         .contact-info {
             display: flex;
             justify-content: center;
-            gap: 1.5rem;
+            gap: 2rem;
             flex-wrap: wrap;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
         }
 
         .contact-info a {
             color: var(--secondary-color);
             text-decoration: none;
-            transition: color 0.3s;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
         .contact-info a:hover {
-            color: var(--primary-color);
+            color: var(--accent-color);
+            transform: translateY(-2px);
         }
 
         .section {
-            margin: 2rem 0;
-            padding: 1.5rem;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 2.5rem 0;
+            padding: 2rem;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         h2 {
-            color: var(--primary-color);
-            margin-bottom: 1.5rem;
-            border-bottom: 2px solid var(--secondary-color);
-            padding-bottom: 0.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 80%;
+            background: var(--accent-color);
+            border-radius: 4px;
         }
 
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
         }
 
         .experience-item {
-            margin: 2rem 0;
-            padding-left: 1rem;
+            margin: 2.5rem 0;
+            padding: 1.5rem;
             border-left: 3px solid var(--secondary-color);
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .experience-item:hover {
+            transform: translateX(10px);
         }
 
         .job-title {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: 600;
-            color: var(--primary-color);
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
         }
 
         .company {
             color: var(--secondary-color);
-            margin: 0.5rem 0;
+            font-size: 0.95rem;
+            margin-bottom: 0.8rem;
         }
 
         .date {
-            color: #666;
+            color: #90a4ae;
             font-size: 0.9rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            background: rgba(79, 195, 247, 0.1);
+            border-radius: 4px;
         }
 
         ul {
@@ -108,33 +164,35 @@
         }
 
         ul li {
-            margin: 0.8rem 0;
+            margin: 1rem 0;
             position: relative;
+            padding-left: 1.5rem;
         }
 
         ul li::before {
-            content: "▹";
+            content: '▹';
             position: absolute;
-            left: -1.2rem;
-            color: var(--secondary-color);
+            left: 0;
+            color: var(--accent-color);
+            font-size: 1.1rem;
         }
 
-        .certification-item {
-            margin: 1rem 0;
-            padding: 1rem;
-            background: #f8f9fa;
-            border-radius: 4px;
-        }
-
-        .education-item {
+        .certification-item, .education-item, .accomplishment-item {
             margin: 1.5rem 0;
+            padding: 1.5rem;
+            background: rgba(79, 195, 247, 0.05);
+            border-radius: 8px;
+            border-left: 3px solid var(--secondary-color);
         }
 
-        .accomplishment-item {
-            margin: 1.5rem 0;
-            padding: 1rem;
-            background: #f8f9fa;
-            border-radius: 4px;
+        .accomplishment-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 3px;
+            background: var(--accent-color);
         }
 
         @media (max-width: 768px) {
@@ -142,9 +200,26 @@
                 padding: 1rem;
             }
             
+
+            .section {
+                padding: 1.5rem;
+            }
+
             .contact-info {
                 flex-direction: column;
                 align-items: center;
+            }
+        }
+
+        @media print {
+            body {
+                background-color: white !important;
+                color: #000 !important;
+            }
+
+            .section {
+                box-shadow: none !important;
+                background: none !important;
             }
         }
     </style>
@@ -224,7 +299,7 @@
         <!-- Experience Section -->
         <section class="section">
             <h2>Professional Experience</h2>
-        
+
             <!-- Ephicacy Lifescience Analytics -->
             <div class="experience-item">
                 <div class="job-title">Technical Lead DevOps</div>
@@ -240,7 +315,7 @@
                     <li>Documented every platform build and implementation step in detail to meet customer auditing requirements, ensuring full transparency and compliance with regulatory standards and internal policies</li>
                 </ul>
             </div>
-        
+
             <!-- Cisco Systems -->
             <div class="experience-item">
                 <div class="job-title">Software Engineer</div>
@@ -263,7 +338,7 @@
                     <li>Continuously Learning and researching on best practices to automate most of the tasks</li>
                 </ul>
             </div>
-        
+
             <!-- Kyndryl Solutions -->
             <div class="experience-item">
                 <div class="job-title">Lead II, Software Engineering - Development</div>
@@ -286,7 +361,7 @@
                     <li>Documenting Architecture diagrams, Release Notes, Runsheet, Knowledge Articles in confluence</li>
                 </ul>
             </div>
-        
+
             <!-- Quess Corp -->
             <div class="experience-item">
                 <div class="job-title">Solution Architect</div>
@@ -297,7 +372,7 @@
                     <li>Automate deployments of MQ and CD applications in GCP using Git, CodeFresh, Terraform</li>
                 </ul>
             </div>
-        
+
             <!-- Sabre Travel Technologies -->
             <div class="experience-item">
                 <div class="job-title">Senior Solution Architect</div>
