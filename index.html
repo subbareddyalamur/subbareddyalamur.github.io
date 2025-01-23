@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subba Reddy Alamur - DevOps Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --background-color: #ffffff;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 3px solid var(--secondary-color);
+            margin-bottom: 2rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .contact-info a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: var(--primary-color);
+        }
+
+        .section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .experience-item {
+            margin: 2rem 0;
+            padding-left: 1rem;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .job-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .company {
+            color: var(--secondary-color);
+            margin: 0.5rem 0;
+        }
+
+        .date {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 1.5rem;
+        }
+
+        ul li {
+            margin: 0.8rem 0;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "▹";
+            position: absolute;
+            left: -1.2rem;
+            color: var(--secondary-color);
+        }
+
+        .certification-item {
+            margin: 1rem 0;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+
+        .education-item {
+            margin: 1.5rem 0;
+        }
+
+        .accomplishment-item {
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Subba Reddy Alamur</h1>
+            <div class="contact-info">
+                <a href="tel:+919620794754"><i class="fas fa-phone"></i> +91 9620794754</a>
+                <a href="mailto:subbareddyalamur@gmail.com"><i class="fas fa-envelope"></i> subbareddyalamur@gmail.com</a>
+                <a href="https://linkedin.com/in/subbareddyalamur" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/subbareddyalamur" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section class="section">
+            <h2>Professional Summary</h2>
+            <p>Results-driven Infrastructure and DevOps Engineer with 11 years of experience in infrastructure build and management, and 7 years of hands-on expertise in DevOps practices. Strong proficiency in designing, building, automating, managing, and scaling infrastructure on AWS and GCP across Windows and Linux environments. Skilled in Continuous Integration/Continuous Deployment (CI/CD), IaC, configuration management, containerization, orchestration, and monitoring solutions. Proven ability to collaborate with cross-functional teams to streamline processes, reduce downtime, and optimize application performance. Basic understanding of Machine Learning (ML) algorithms and leveraging GenAI tools to enhance productivity at work.</p>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div>
+                    <h3>Cloud Platforms</h3>
+                    <ul>
+                        <li>AWS</li>
+                        <li>GCP</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Operating Systems</h3>
+                    <ul>
+                        <li>Windows</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Version Control</h3>
+                    <ul>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CI/CD</h3>
+                    <ul>
+                        <li>Jenkins</li>
+                        <li>CodeFresh</li>
+                        <li>Concourse</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Containerization & Orchestration</h3>
+                    <ul>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>Helm</li>
+                        <li>ArgoCD</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Monitoring & Observability</h3>
+                    <ul>
+                        <li>Datadog</li>
+                        <li>AppDynamics</li>
+                        <li>Prometheus</li>
+                        <li>Grafana</li>
+                        <li>SolarWinds</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section">
+            <h2>Professional Experience</h2>
+        
+            <!-- Ephicacy Lifescience Analytics -->
+            <div class="experience-item">
+                <div class="job-title">Technical Lead DevOps</div>
+                <div class="company">Ephicacy Lifescience Analytics Private Ltd, Bangalore (Client – Sycamore Informatics)</div>
+                <div class="date">Aug 2024 - Present</div>
+                <ul>
+                    <li>Built and managed multiple siloed environments for various customers at Sycamore Informatics, ensuring data security, segregation, and compliance with customer-specific requirements</li>
+                    <li>Designed, deployed, and maintained EKS clusters for scalable and highly available containerized applications, optimizing resource usage and performance</li>
+                    <li>Defined and implemented comprehensive backup and restore strategies using CloudCasa, ensuring data protection and disaster recovery readiness for Kubernetes workloads</li>
+                    <li>Established Disaster Recovery (DR) environments for different customers, ensuring business continuity by setting up backup infrastructure and failover systems</li>
+                    <li>Led and executed regular DR drills to validate the stability and reliability of DR environments, ensuring minimal downtime and rapid recovery in case of emergencies</li>
+                    <li>Performing weekly maintenance activities like rebooting machines and eventually automating the processes</li>
+                    <li>Documented every platform build and implementation step in detail to meet customer auditing requirements, ensuring full transparency and compliance with regulatory standards and internal policies</li>
+                </ul>
+            </div>
+        
+            <!-- Cisco Systems -->
+            <div class="experience-item">
+                <div class="job-title">Software Engineer</div>
+                <div class="company">Cisco Systems India Pvt Ltd, Bangalore</div>
+                <div class="date">Sep 2023 - Aug 2024</div>
+                <ul>
+                    <li>Using Terraform built AWS EKS clusters for multiple environments with different TF providers AWS, Kubernetes, Helm, Datadog and CRDs</li>
+                    <li>Deployed python GenAI (Azure OpenAI) application to EKS clusters</li>
+                    <li>Wrote / modified Jenkins pipelines to automate EKS builds and application deployments</li>
+                    <li>Integrated regression tests in Jenkins deployment pipelines</li>
+                    <li>Worked on enabling SSO using GitHub OAuth for Grafana</li>
+                    <li>Wrote python flask APIs to create health checks to all the endpoints that the application connects to</li>
+                    <li>Configured Datadog monitors for infra, Kubernetes metrics, synthetic monitors and integrated with PagerDuty to receive alerts on instant messaging application (Webex)</li>
+                    <li>Configured alerts on Amazon ES Kibana and integrated with PaperDuty for alerts</li>
+                    <li>Terraformed Datadog dashboards for multiple environments</li>
+                    <li>Conducted comprehensive performance analysis and benchmarking for EKS Clusters</li>
+                    <li>Evaluated and optimized EKS cluster performance metrics including but not limited to Resource Utilization, Network Performance, Application throughput and latency using Apache JMeter / Locust</li>
+                    <li>Collaborating with developers and leaders to understand the requirements and fulfilling their needs with automation</li>
+                    <li>Worked on projects in US GovCloud ensuring compliance with FedRAMP requirements</li>
+                    <li>Continuously Learning and researching on best practices to automate most of the tasks</li>
+                </ul>
+            </div>
+        
+            <!-- Kyndryl Solutions -->
+            <div class="experience-item">
+                <div class="job-title">Lead II, Software Engineering - Development</div>
+                <div class="company">Kyndryl Solutions Pvt Ltd, Bangalore (Client – ANZ Bank)</div>
+                <div class="date">Jan 2022 - Sep 2023</div>
+                <ul>
+                    <li>Designing and building of IBM MQ and Sterling Connect Direct (C:D) applications in GCP and AWS</li>
+                    <li>Created and maintained GCP projects using ANZ certified terraform modules</li>
+                    <li>Contributing to ANZ terraform modules via GitHub PRs</li>
+                    <li>Automate deployments of MQ and CD applications in GCP using Git, Bash, CodeFresh, Terraform</li>
+                    <li>Writing groovy scripted pipelines in Jenkins for CI/CD of web applications</li>
+                    <li>Working with dev teams and writing Dockerfiles, Kubernetes manifests and deploy them in AWS EKS clusters using ArgoCD through Jenkins</li>
+                    <li>Use of Hashicorp Vault to store secrets and use in CI/CD pipelines</li>
+                    <li>Worked on deploying AppDynamics k8s cluster agent into Kubernetes cluster for monitoring k8s cluster resource usage</li>
+                    <li>Worked on encrypting RDS Databases, snapshots with AWS KMS (Customer managed keys) and moving them</li>
+                    <li>Designing pipeline strategies during maintenance/patching/upgrading systems</li>
+                    <li>Mentoring and advising teammates from junior to seniors</li>
+                    <li>Working closely with developers to understand their needs and enhancing the scripts required to deploy applications</li>
+                    <li>Provide production support services and assistance to the application team on problem investigation and problem troubleshooting</li>
+                    <li>Documenting Architecture diagrams, Release Notes, Runsheet, Knowledge Articles in confluence</li>
+                </ul>
+            </div>
+        
+            <!-- Quess Corp -->
+            <div class="experience-item">
+                <div class="job-title">Solution Architect</div>
+                <div class="company">Quess Corp Limited, Bangalore (Client – ANZ Bank)</div>
+                <div class="date">Jul 2021 - Jan 2022</div>
+                <ul>
+                    <li>Designing and building of IBM MQ and Sterling Connect Direct (CD) applications in GCP</li>
+                    <li>Automate deployments of MQ and CD applications in GCP using Git, CodeFresh, Terraform</li>
+                </ul>
+            </div>
+        
+            <!-- Sabre Travel Technologies -->
+            <div class="experience-item">
+                <div class="job-title">Senior Solution Architect</div>
+                <div class="company">Sabre Travel Technologies Pvt Ltd, Bangalore</div>
+                <div class="date">May 2017 - Jul 2021</div>
+                <ul>
+                    <li>Held positions in 3 teams, SaaS Citrix, Middleware and ServiceNow Automation team respectively</li>
+                    <li>Installation and configuration of IBM WebSphere MQ version 8 & 9 on RHEL</li>
+                    <li>Create, update, delete, backup and recovery of MQ objects</li>
+                    <li>Troubleshoot MQ related issues using MQ Logs and System utilities</li>
+                    <li>Granting and revoking permissions to MQ objects and configuring security exit files</li>
+                    <li>Supporting platform teams to patch on prem MQ servers</li>
+                    <li>Setting up of RDQM on AWS using cloud formation templates</li>
+                    <li>Working with different AWS services to build infrastructure for MQ systems and Citrix Virtual Apps and Desktops</li>
+                    <li>Participated in periodic application releases and testing of the new versions in non-prod and production</li>
+                    <li>Used Git, Jenkins, Ansible, Nexus tools during application release</li>
+                    <li>Scripting in PowerShell and Python to automate different tasks like backup of data, installing updates to applications we support, and monitoring infrastructure</li>
+                    <li>Working on GCP to setup MQ using Terraform</li>
+                    <li>Wrote CloudFormation templates to deploy Community Portal (java web application) application in AWS</li>
+                    <li>Wrote Terraform code to stand up ServiceNow Mid servers in GCP</li>
+                    <li>Using Docker to create containers for testing and validating applications before proceeding to higher environments</li>
+                    <li>Have designed and configured Monitoring for the infrastructure using AppDynamics and SolarWinds. Have written AppDynamics custom scripts to monitor and create alerts for desired features</li>
+                    <li>Have participated in building state-of-the-art infrastructure with proven redundancy and scalability</li>
+                    <li>Administered MS SQL database, setup Always-On High Availability using Microsoft Failover Clustering, configured jobs to take backups and shrink transaction logs, cleanup disk space</li>
+                    <li>Worked flexibly during nights, weekends, and holidays depending on requirement</li>
+                    <li>Quickly learned new skills and applied them to daily tasks, improving efficiency and productivity</li>
+                    <li>Working flexibly to support internal and external customers in different time zones</li>
+                </ul>
+            </div>
+        
+            <!-- IBM India -->
+            <div class="experience-item">
+                <div class="job-title">Senior Operations Professional</div>
+                <div class="company">IBM India Pvt Ltd, Bangalore</div>
+                <div class="date">April 2016 - May 2017</div>
+                <ul>
+                    <li>Installation and configuration of Citrix XenApp/XenDesktop (6.5, 7.6 and 7.9 versions), Provisioning and Machine creation Services, licensing, StoreFront and Director</li>
+                    <li>Creating and managing XenApp/XenDesktop policies</li>
+                    <li>Publishing applications, content and Desktops via Citrix XenApp/XenDesktop</li>
+                    <li>Configuring and Managing users’ profiles using Citrix UPM</li>
+                    <li>Working interactively with business customers and resolving day to day Citrix XenApp and XenDesktop related issues</li>
+                    <li>Automating XenApp, Storefront, VDA deployments using PowerShell scripts</li>
+                    <li>Managing Active Directory for granting permissions on applications and desktops to users</li>
+                    <li>Carried out day-day-day duties accurately and efficiently</li>
+                    <li>Actively listened to customers, handled concerns quickly and escalated major issues to supervisor</li>
+                    <li>Delivered exceptional level of service to each customer by listening to concerns and answering questions</li>
+                </ul>
+            </div>
+        
+            <!-- HCL Tech -->
+            <div class="experience-item">
+                <div class="job-title">Senior Analyst</div>
+                <div class="company">HCL Tech Ltd, Bangalore (Client: Deutsche Bank)</div>
+                <div class="date">May 2014 - April 2016</div>
+                <ul>
+                    <li>Supporting Citrix XenApp 6.5 environment</li>
+                    <li>Adding and removing permissions on applications to users and groups</li>
+                    <li>Patching windows servers using WSUS</li>
+                    <li>Working on incidents to resolve day-to-day issues</li>
+                    <li>Generating infrastructure health reports periodically to present to higher management</li>
+                    <li>Investigated and addressed system issues to enhance usability and improve functionality</li>
+                    <li>Documented procedures and business processes and shared information with appropriate stakeholders</li>
+                </ul>
+            </div>
+        
+            <!-- SourceOne Management -->
+            <div class="experience-item">
+                <div class="job-title">System Administrator</div>
+                <div class="company">SourceOne Management Services Pvt Ltd, Bangalore (Client: Deutsche Bank)</div>
+                <div class="date">November 2013 - May 2014</div>
+                <ul>
+                    <li>Supporting Citrix XenApp 6.5 environment</li>
+                    <li>Adding and removing permissions on applications to users and groups</li>
+                    <li>Oversaw file system, storage and other digital asset upgrades while safeguarding data integrity and redundancy</li>
+                    <li>Installed important security and functionality patches to maintain optimal protection against intrusion and system reliability</li>
+                </ul>
+            </div>
+        
+        </section>
+
+        <!-- Certifications -->
+        <section class="section">
+            <h2>Certifications</h2>
+            <div class="certification-item">
+                <h3>AWS Certified Solutions Architect – Associate</h3>
+                <div class="date">July 2021</div>
+            </div>
+            <div class="certification-item">
+                <h3>Architecture with Google Compute Engine Specialization – Coursera</h3>
+                <div class="date">August 2020</div>
+            </div>
+            <div class="certification-item">
+                <h3>Microsoft Certified Professional – Administering Windows Server 2012</h3>
+                <div class="date">September 2014 (F015-7356)</div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Bachelor of Technology in Electronics and Communication Engineering</h3>
+                <div class="company">Jawaharlal Nehru Technological University, Anantapur</div>
+                <div class="date">April 2012</div>
+            </div>
+            <div class="education-item">
+                <h3>Intermediate (Mathematics, Physics, Chemistry)</h3>
+                <div class="company">Bapuji Cooperative Junior College, Anantapur</div>
+                <div class="date">March 2008</div>
+            </div>
+            <div class="education-item">
+                <h3>SSC (High School)</h3>
+                <div class="company">Oxford English Medium High School, Anantapur</div>
+                <div class="date">March 2006</div>
+            </div>
+        </section>
+
+        <!-- Major Accomplishments -->
+        <section class="section">
+            <h2>Major Accomplishments</h2>
+            <div class="accomplishment-item">
+                <h3>PowerShell GUI Application for Level 1 Support</h3>
+                <p>Developed tool allowing support team members to reset Citrix UPM profiles and application-level profiles, with audit logging capabilities. Reduced support tickets by 40%.</p>
+            </div>
+            <div class="accomplishment-item">
+                <h3>Infrastructure Monitoring System</h3>
+                <p>Implemented monitoring solution using AppDynamics and SolarWinds with custom PowerShell scripts for metric collection. Reduced system downtime by 30% and received $1,000 recognition bonus.</p>
+            </div>
+            <div class="accomplishment-item">
+                <h3>Team Shift Roster Generator</h3>
+                <p>Python application automating shift scheduling across global teams. Features equal distribution of shifts including weekends/holidays. <a href="https://github.com/subbareddyalamur/Team-ShiftRoster" target="_blank">View on GitHub</a></p>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
